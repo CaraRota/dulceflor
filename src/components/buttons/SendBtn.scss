@@ -1,0 +1,10 @@
+@import '../../global.scss';
+
+.sendBtn {
+    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+    background-color: $dorado;
+    color: $black;
+    font-family: $font-general;
+    border-color: transparent;
+}

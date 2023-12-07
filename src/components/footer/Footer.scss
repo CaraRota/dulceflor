@@ -11,8 +11,23 @@
 
     .social {
         grid-column: 1/3;
-        color: $frutilla;
-        font-family: $font-caligraphic;
+
+        .socialContainer {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: .8rem;
+
+            .instagram,
+            .facebook {
+                width: 30px;
+                height: auto;
+            }
+        }
+
+        .text {
+            color: $white;
+            font-family: $font-general;
+        }
     }
 
     .logo {
@@ -23,6 +38,23 @@
 
     .newsletter {
         grid-column: 3/3;
-        color: $pomelo;
+
+        .text {
+            text-align: center;
+            color: $white;
+            font-family: $font-general;
+            font-weight: 600;
+            margin-bottom: .8rem;
+        }
+
+        .email {
+            margin-right: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            border-color: transparent;
+            background-color: $white;
+            color: $black;
+            font-family: $font-general;
+        }
     }
 }
