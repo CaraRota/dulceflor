@@ -1,0 +1,35 @@
+//Fonts
+
+//GENERAL FONT
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+$font-general: 'Montserrat Alternates', sans-serif;
+
+//TITLES FONT
+@font-face {
+    font-family: 'Master Of Break'; // This is the name you'll use to reference the font
+    src: url('./assets/fonts/master_of_break.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-titles: 'Libel', sans-serif;
+
+//CALIGRAPHIC FONT
+@font-face {
+    font-family: 'Libel'; // This is the name you'll use to reference the font
+    src: url('./assets/fonts/libel-suit-rg.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-caligraphic: 'Master Of Break', cursive;
+
+
+//Color Palette
+$white: #fff;
+$black: #050505; //(en todo lo que va en negro, navbar, textos, títulos, footer, etc.)
+$pomelo: #FF9F8D; // palabra 'Pomelo' y trazos
+$pera: #FFE273; //palabra 'Pera' y trazos
+$frutilla: #FF8D9A; //palabra 'Frutilla' y trazos
+$mandarina: #FFAD67; //palabra 'Mandarina' y trazos
+$dorado: #FFCC6A; //Botones y palabras del Nav bar

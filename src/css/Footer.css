@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+@font-face {
+  font-family: "Master Of Break";
+  src: url("./assets/fonts/master_of_break.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Libel";
+  src: url("./assets/fonts/libel-suit-rg.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}/*# sourceMappingURL=Footer.css.map */
