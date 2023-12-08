@@ -30,6 +30,11 @@
   width: 30px;
   height: auto;
 }
+.footerContainer .social .socialContainer .instagram:hover,
+.footerContainer .social .socialContainer .facebook:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
 .footerContainer .social .text {
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -37,10 +42,39 @@
 .footerContainer .goTop {
   cursor: pointer;
 }
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .footerContainer .goTop .logo {
   grid-column: 2/3;
   width: 100px;
   height: auto;
+}
+.footerContainer .goTop .logo:hover {
+  animation: heartbeat 1.3s infinite;
+}
+.footerContainer .goTop .logo:hover:before, .footerContainer .goTop .logo:hover:after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  top: -50px;
+}
+.footerContainer .goTop .logo:hover:before {
+  left: 50px;
+}
+.footerContainer .goTop .logo:hover:after {
+  left: 0;
 }
 .footerContainer .newsletter {
   grid-column: 3/3;
@@ -60,4 +94,11 @@
   background-color: #fff;
   color: #050505;
   font-family: "Montserrat", sans-serif;
+}
+.footerContainer .newsletter .email:active {
+  outline: none;
+}
+.footerContainer .newsletter .email:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px 0px #FFCC6A;
 }/*# sourceMappingURL=Footer.css.map */

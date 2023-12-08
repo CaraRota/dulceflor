@@ -10,6 +10,10 @@ import instagram from '../../assets/images/ig-icon-white.png'
 import facebook from '../../assets/images/fb-icon-white.png'
 
 const Footer = () => {
+
+    const igLink = 'https://www.instagram.com/dulceflorjam/'
+    const fbLink = 'https://www.facebook.com/dulceflormermeladas/'
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -21,8 +25,8 @@ const Footer = () => {
         <div className='footerContainer'>
             <div className='social'>
                 <div className='socialContainer'>
-                    <a href="https://www.instagram.com/" target='_blank'><img className='instagram' src={instagram}></img></a>
-                    <a href="https://www.facebook.com/" target='_blank'><img className='facebook' src={facebook}></img></a>
+                    <a href={igLink} target='_blank'><img className='instagram' src={instagram}></img></a>
+                    <a href={fbLink} target='_blank'><img className='facebook' src={facebook}></img></a>
                 </div>
                 <div className='text'>Seguinos en nuestras redes</div>
             </div>

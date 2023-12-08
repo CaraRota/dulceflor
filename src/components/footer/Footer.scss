@@ -21,6 +21,11 @@
             .facebook {
                 width: 30px;
                 height: auto;
+
+                &:hover {
+                    transform: scale(1.2);
+                    transition: all .3s ease-in-out;
+                }
             }
         }
 
@@ -33,10 +38,47 @@
     .goTop {
         cursor: pointer;
 
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+
+            75% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
         .logo {
             grid-column: 2/3;
             width: 100px;
             height: auto;
+
+            &:hover {
+                animation: heartbeat 1.3s infinite;
+
+                &:before,
+                &:after {
+                    content: "";
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    position: absolute;
+                    border-radius: 50%;
+                    top: -50px;
+                }
+
+                &:before {
+                    left: 50px;
+                }
+
+                &:after {
+                    left: 0;
+                }
+            }
         }
     }
 
@@ -59,6 +101,15 @@
             background-color: $white;
             color: $black;
             font-family: $font-general;
+
+            &:active {
+                outline: none;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: 0px 0px 10px 0px $dorado;
+            }
         }
     }
 }
