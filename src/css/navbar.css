@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+@font-face {
+    font-family: "Master Of Break";
+    src: url("src/assets/fonts/master_of_break.ttf");
+  }
+  @font-face {
+    font-family: "Libel";
+    src: url("src/assets/fonts/libel-suit-rg.otf");
+  }
+
+.navbarContainer{
+    background-color: black;
+    display: flex;
+    width: 1366px;
+    height: 70px;
+    flex-shrink: 0;
+}
+
+.navbarLogo{
+    background-color: white;
+    border-top-right-radius: 18px;
+}
+
+.logoNavbar{
+
+    width: 71px;
+    height: 46px;
+    flex-shrink: 0;
+    margin: 12px 53px 15px 52px;
+}
+
+.pagesNavbar{
+    height: 19px;
+    flex-shrink: 0;
+}
+
+
+.divPagesNavbar{
+    display: flex;
+}
+
+.divPagesNavbar p{
+    padding: 25px 25px 26px 26px;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #FFCC6A;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 141.9%;
+}
