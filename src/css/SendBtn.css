@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+@font-face {
+  font-family: "Master Of Break";
+  src: url("src/assets/fonts/master_of_break.ttf");
+}
+@font-face {
+  font-family: "Libel";
+  src: url("src/assets/fonts/libel-suit-rg.otf");
+}
+.sendBtn {
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  background-color: #FFCC6A;
+  color: #050505;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-color: transparent;
+  cursor: pointer;
+}
+.sendBtn:hover {
+  box-shadow: 0px 0px 10px 0px #FFCC6A;
+}/*# sourceMappingURL=SendBtn.css.map */
