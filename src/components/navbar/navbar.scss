@@ -23,10 +23,19 @@
     flex-shrink: 0;
     margin: 12px 53px 15px 52px;
 }
+.divPagesNavbar a {
+  text-decoration: none;
+}
 
 .pagesNavbar{
     height: 19px;
     flex-shrink: 0;
+}
+
+
+
+.pagesNavbar:hover {
+    color: $pomelo; 
 }
 
 
@@ -45,4 +54,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 141.9%;
+
+    cursor: pointer;
 }
+
