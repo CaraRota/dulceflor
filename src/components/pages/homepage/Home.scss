@@ -1,0 +1,122 @@
+@import '../../../global.scss';
+
+.heroContainer {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    place-items: center;
+    height: 100vh;
+    background-color: $white;
+
+    .titlesContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 90%;
+        gap: 1rem;
+
+        .title {
+            color: $black;
+            background-color: $hero-title-bg;
+            font-family: $font-titles;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 400;
+            text-transform: uppercase;
+            border-radius: 11px;
+            padding: .5rem;
+
+            @media (max-width: 978px) {
+                font-size: 1.5rem;
+            }
+
+            @media (max-width: 738px) {
+                font-size: 1rem;
+            }
+
+            @media (max-width: 500px) {
+                font-size: .8rem;
+            }
+
+            @media (max-width: 410px) {
+                font-size: .62rem;
+            }
+        }
+
+        .subtitle {
+            font-family: $font-general;
+            text-align: center;
+            font-weight: 400;
+            font-size: 1.5rem;
+
+            .bold {
+                font-weight: 700;
+            }
+
+            @media (max-width: 978px) {
+                font-size: 1rem;
+            }
+
+            @media (max-width: 738px) {
+                font-size: .8rem;
+            }
+
+            @media (max-width: 500px) {
+                font-size: .62rem;
+            }
+        }
+
+        .contactBtn {
+            .sendBtn {
+                padding: 10px 50px 10px 50px;
+            }
+        }
+    }
+
+    .imagesContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        position: relative;
+
+        .petalosAtras {
+            position: absolute;
+            width: auto;
+            height: 59vh;
+            transform: translate(1.5rem, -3%);
+            z-index: 10;
+        }
+
+        .petalosAdelante {
+            position: absolute;
+            width: auto;
+            height: 70vh;
+            transform: translate(-3%, -2%);
+            z-index: 104;
+        }
+
+        .gajoNaranja {
+            position: absolute;
+            transform: rotate(260deg) translate(73%, 102%);
+            height: 15vh;
+            width: auto;
+            z-index: 100;
+        }
+
+        .rodajaNaranja {
+            position: absolute;
+            transform: translate(-75%, 55%);
+            height: 20vh;
+            width: auto;
+            z-index: 9;
+        }
+
+        .frascoPomelo {
+            position: absolute;
+            height: 45vh;
+            width: auto;
+            z-index: 10;
+        }
+    }
+}
