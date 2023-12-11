@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 @font-face {
   font-family: "Master Of Break";
-  src: url("src/assets/fonts/master_of_break.ttf");
+  src: url("/public/fonts/master_of_break.ttf");
 }
 @font-face {
   font-family: "Libel";
-  src: url("src/assets/fonts/libel-suit-rg.otf");
+  src: url("/public/fonts/libel-suit-rg.otf");
 }
 .navbarContainer {
   background-color: #050505;
