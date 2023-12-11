@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+@font-face {
+  font-family: "Master Of Break";
+  src: url("src/assets/fonts/master_of_break.ttf");
+}
+@font-face {
+  font-family: "Libel";
+  src: url("src/assets/fonts/libel-suit-rg.otf");
+}
+.sectionContainer {
+  width: 90%;
+  max-width: 90%;
+  margin: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+}
+.sectionContainer .leftSideLeft {
+  align-items: end;
+}
+.sectionContainer .leftSide {
+  align-items: start;
+}
+.sectionContainer .leftSide,
+.sectionContainer .leftSideLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sectionContainer .leftSide .title #Pomelo,
+.sectionContainer .leftSideLeft .title #Pomelo {
+  color: #FF9F8D;
+}
+.sectionContainer .leftSide .title #Pera,
+.sectionContainer .leftSideLeft .title #Pera {
+  color: #FFE273;
+}
+.sectionContainer .leftSide .title #Frutilla,
+.sectionContainer .leftSideLeft .title #Frutilla {
+  color: #FF8D9A;
+}
+.sectionContainer .leftSide .title #Mandarina,
+.sectionContainer .leftSideLeft .title #Mandarina {
+  color: #FFAD67;
+}
+.sectionContainer .leftSide .title #Frambuesa,
+.sectionContainer .leftSideLeft .title #Frambuesa {
+  color: #FF7EAD;
+}
+.sectionContainer .leftSide .title .specialFontTitle,
+.sectionContainer .leftSideLeft .title .specialFontTitle {
+  font-family: "Master Of Break";
+  font-size: 3.4375em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 196.755%;
+  /* 6.76344rem */
+}
+.sectionContainer .leftSide .title .longSpecialFontTitle,
+.sectionContainer .leftSideLeft .title .longSpecialFontTitle {
+  font-family: "Master Of Break";
+  font-size: 3.4375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+.sectionContainer .leftSide .title .normalFontTitle,
+.sectionContainer .leftSideLeft .title .normalFontTitle {
+  color: #050505;
+  font-family: "Libel", sans-serif;
+  font-size: 3.4375rem;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 196.755%;
+}
+.sectionContainer .leftSide .title .longFontTitle,
+.sectionContainer .leftSideLeft .title .longFontTitle {
+  color: #050505;
+  font-family: "Libel", sans-serif;
+  font-size: 3.4375rem;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.sectionContainer .leftSide .subtitle,
+.sectionContainer .leftSideLeft .subtitle {
+  width: 100%;
+  max-width: 36.8125rem;
+  height: auto;
+  flex-shrink: 0;
+}
+.sectionContainer .leftSide .subtitle .text,
+.sectionContainer .leftSideLeft .subtitle .text {
+  color: #050505;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 139.583%;
+}
+.sectionContainer .leftSide .Pomelo,
+.sectionContainer .leftSideLeft .Pomelo {
+  border: 1px solid #FF9F8D;
+}
+.sectionContainer .leftSide .Pera,
+.sectionContainer .leftSideLeft .Pera {
+  border: 1px solid #FFE273;
+}
+.sectionContainer .leftSide .Frutilla,
+.sectionContainer .leftSideLeft .Frutilla {
+  border: 1px solid #FF8D9A;
+}
+.sectionContainer .leftSide .Mandarina,
+.sectionContainer .leftSideLeft .Mandarina {
+  border: 1px solid #FFAD67;
+}
+.sectionContainer .leftSide .Frambuesa,
+.sectionContainer .leftSideLeft .Frambuesa {
+  border: 1px solid #FF7EAD;
+}
+.sectionContainer .leftSide .rectangle,
+.sectionContainer .leftSideLeft .rectangle {
+  border-radius: 0.6875rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 40.29425rem;
+  height: auto;
+  flex-shrink: 0;
+}
+.sectionContainer .leftSide .rectangle .text,
+.sectionContainer .leftSideLeft .rectangle .text {
+  color: #050505;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.59375rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 38.04925rem;
+  height: auto;
+}
+.sectionContainer .rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sectionContainer .rightSide #Pomelo {
+  border-radius: 3.25em 10.75em;
+  border: 2px solid #FF9F8D;
+}
+.sectionContainer .rightSide #Pera {
+  border-radius: 10.75em 3.25em 3.25em 3.25em;
+  border: 2px solid #FFE273;
+}
+.sectionContainer .rightSide #Frutilla {
+  border-radius: 3.25em 10.75em 3.25em 3.25em;
+  border: 2px solid #FF8D9A;
+}
+.sectionContainer .rightSide #Mandarina {
+  border-radius: 10.75em 3.25em;
+  border: 2px solid #FFAD67;
+}
+.sectionContainer .rightSide #Frambuesa {
+  border-radius: 3.25em 3.25em 3.25em 10.75em;
+  border: 2px solid #FF7EAD;
+}
+.sectionContainer .rightSide .wrapper {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  max-width: 60%;
+}
+.sectionContainer .rightSide .wrapper .frascoLeft {
+  transform: rotate(7.29deg);
+}
+.sectionContainer .rightSide .wrapper .frasco {
+  transform: rotate(-7.29deg);
+}
+.sectionContainer .rightSide .wrapper .frasco,
+.sectionContainer .rightSide .wrapper .frascoLeft {
+  width: 100%;
+  padding: 5em;
+}/*# sourceMappingURL=Section.css.map */
