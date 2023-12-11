@@ -12,7 +12,7 @@ $font-navbar: 'Montserrat Alternates', sans-serif;
 //CALIGRAPHIC FONT
 @font-face {
     font-family: 'Master Of Break';
-    src: url('src/assets/fonts/master_of_break.ttf');
+    src: url('/public/fonts/master_of_break.ttf');
 }
 
 $font-caligraphic: 'Master Of Break';
@@ -20,7 +20,7 @@ $font-caligraphic: 'Master Of Break';
 //TITLES FONT
 @font-face {
     font-family: 'Libel';
-    src: url('src/assets/fonts/libel-suit-rg.otf');
+    src: url('/public/fonts/libel-suit-rg.otf');
 }
 
 $font-titles: 'Libel', sans-serif;
