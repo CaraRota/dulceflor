@@ -14,6 +14,7 @@
   place-items: center;
   height: 100vh;
   background-color: #fff;
+  margin-top: 4.38rem;
 }
 .heroContainer .titlesContainer {
   display: flex;
