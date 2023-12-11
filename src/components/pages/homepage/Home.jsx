@@ -21,7 +21,7 @@ import frascoFrambuesa from '../../../assets/images/frasco-frambuesa.png'
 import { Link } from 'react-router-dom'
 
 //Components
-import Section1 from './Section1'
+import Section from './Section'
 
 const Home = () => {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -66,7 +66,7 @@ const Home = () => {
                     <img className='frascoPomelo' src={frascoPomelo} alt='frasco de pomelo' />
                 </div>
             </div>
-            <Section1
+            <Section
                 title1='Pomelo'
                 title2='con rosas'
                 text='Equilibrio entre la intensidad cítrica del pomelo con la suavidad floral de los pétalos de rosas.'
@@ -77,7 +77,7 @@ const Home = () => {
                 alt='frasco de pomelo'
 
             />
-            <Section1
+            <Section
                 title1='Pera'
                 title2='con jazmín'
                 text='Ideal fusión entre la jugosa dulzura de la pera con la sutil fragancia del Jazmín.'
@@ -88,7 +88,7 @@ const Home = () => {
                 leftSide={false}
                 alt='frasco de pera'
             />
-            <Section1
+            <Section
                 title1='Frutilla'
                 title2='con rosas'
                 text='Perfecta armonía entre la frescura de las frutillas y la delicadeza floral de los pétalos de rosas.'
@@ -99,7 +99,7 @@ const Home = () => {
                 leftSide={true}
                 alt='frasco de frutilla'
             />
-            <Section1
+            <Section
                 title1='Mandarina'
                 title2='con azafrán'
                 text='Adecuado balance entre la vibrante frescura de la mandarina y la exquisita calidez del azafrán.'
@@ -109,7 +109,7 @@ const Home = () => {
                 leftSide={false}
                 alt='frasco de mandarina'
             />
-            <Section1
+            <Section
                 title1='Frambuesa'
                 title2='y champagne con rosas'
                 text='Justa combinación entre la acidez de la frambuesa, las burbujas refinadas del champagne y la presencia de los pétalos de rosas.'

@@ -1,9 +1,9 @@
 import React from 'react'
 
 //CSS
-import '../../../css/Section1.css'
+import '../../../css/Section.css'
 
-const Section1 = ({ title1, title2, text, text2, text3, image, leftSide, alt }) => {
+const Section = ({ title1, title2, text, text2, text3, image, leftSide, alt }) => {
 
     return (
 
@@ -84,4 +84,4 @@ const Section1 = ({ title1, title2, text, text2, text3, image, leftSide, alt }) 
     )
 }
 
-export default Section1
+export default Section
