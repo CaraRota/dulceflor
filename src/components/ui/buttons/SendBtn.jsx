@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../css/SendBtn.css'
+import '../../../css/SendBtn.css'
 
 const SendBtn = ({ text }) => {
     return (
