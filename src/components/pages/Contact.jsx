@@ -26,20 +26,29 @@ const Contact = () => {
                     <p>Rellená el formulario de contacto y nos comunicaremos a la brevedad.</p>
                 </div>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <label className='labels'>Nombre</label>
+                    <div className='labelContainer'>
+                        <label>Ingresá tu nombre</label>
+                    </div>
                     <input type="text" placeholder="Nombre" {...register("Nombre", { required: true, maxLength: 80 })} />
-                    <label className='labels'>Apellido</label>
+                    <div className='labelContainer'>
+                        <label>Ingresá tu número celular</label>
+                    </div>
                     <input type="tel" placeholder="Número celular" {...register("Celular", { required: true })} />
-                    <label className='labels'>Correo electrónico</label>
+                    <div className='labelContainer'>
+                        <label>Ingresá tu correo electrónico</label>
+                    </div>
                     <input type="text" placeholder="Correo electrónico" {...register("Email", { required: true, pattern: /^\S+@\S+$/i })} />
-                    {/* insert message textarea here */}
-                    <label className='labels'>Mensaje</label>
+                    <div className='labelContainer'>
+                        <label>Ingresá tu mensaje</label>
+                    </div>
                     <textarea placeholder='Mensaje' {...register("Mensaje", { required: true })} />
                     <SendBtn type="submit" text={'Enviar'} />
                 </form>
             </div>
             <div className='rightSide'>
-                <Frasco />
+                <div className='frascoContainer'>
+                    <Frasco />
+                </div>
             </div>
         </div>
     )

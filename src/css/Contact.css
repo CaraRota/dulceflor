@@ -2,21 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 @font-face {
   font-family: "Master Of Break";
-  src: url("/public/fonts/master_of_break.ttf");
+  src: url("/fonts/master_of_break.ttf");
 }
 @font-face {
   font-family: "Libel";
-  src: url("/public/fonts/libel-suit-rg.otf");
+  src: url("/fonts/libel-suit-rg.otf");
 }
 .contactContainer {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
   width: 90%;
-  margin: 10% auto;
+  margin: 5rem auto;
 }
 .contactContainer .leftSide {
-  /* Add more styling as needed */
+  grid-column: 1/2;
 }
 .contactContainer .leftSide .title {
   color: #050505;
@@ -41,27 +41,32 @@
   max-width: 40.125rem;
   margin-top: 1.2rem;
 }
-.contactContainer .leftSide .labels {
-  margin: 1.2rem 0 1.2rem 0;
+.contactContainer .leftSide form .labelContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0.6rem 0;
+}
+.contactContainer .leftSide form .labelContainer label {
   color: #050505;
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 110%;
-  /* 1.375rem */
-  border: none;
 }
-.contactContainer .leftSide input,
-.contactContainer .leftSide textarea {
+.contactContainer .leftSide form input,
+.contactContainer .leftSide form textarea {
   width: 100%;
   height: 2.34181rem;
   border-radius: 0.5625rem;
   background: #E4E4E4;
   border: none;
 }
-.contactContainer .leftSide input[placeholder],
-.contactContainer .leftSide textarea[placeholder] {
+.contactContainer .leftSide form textarea {
+  height: 6.25rem;
+  padding-top: 0.6rem;
+}
+.contactContainer .leftSide form input[placeholder],
+.contactContainer .leftSide form textarea[placeholder] {
   color: #B8B8B8;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
@@ -70,20 +75,21 @@
   line-height: 110%;
   padding-left: 1rem;
   border: none;
-  /* 1.1rem */
 }
-.contactContainer .leftSide textarea {
-  height: 5.75rem;
+.contactContainer .leftSide form input[placeholder]:active, .contactContainer .leftSide form input[placeholder]:focus,
+.contactContainer .leftSide form textarea[placeholder]:active,
+.contactContainer .leftSide form textarea[placeholder]:focus {
+  outline: none;
 }
-.contactContainer .leftSide input[type=submit] {
-  background-color: #4caf50;
-  color: white;
-  cursor: pointer;
-}
-.contactContainer .leftSide input[type=submit]:hover {
-  background-color: #45a049;
+.contactContainer .leftSide form button {
+  margin: 1.5rem auto;
 }
 .contactContainer .rightSide {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  grid-column: 2/3;
+}
+.contactContainer .rightSide .frascoContainer {
+  height: 100vh !important;
 }/*# sourceMappingURL=Contact.css.map */
