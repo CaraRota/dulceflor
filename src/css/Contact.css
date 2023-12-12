@@ -41,6 +41,15 @@
   max-width: 40.125rem;
   margin-top: 1.2rem;
 }
+.contactContainer .leftSide form .error {
+  color: red;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  margin: 0;
+}
 .contactContainer .leftSide form .labelContainer {
   display: flex;
   flex-direction: column;
