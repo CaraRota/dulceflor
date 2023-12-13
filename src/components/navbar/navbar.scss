@@ -1,52 +1,65 @@
 @import '../../global.scss';
 
-.navbarContainer {
-    background-color: $black;
-    display: flex;
-    width: 100%;
-    height: 70px;
-    flex-shrink: 0;
 
-    .navbarLogo {
-        background-color: $white;
-        border-top-right-radius: 18px;
-
-        .logoNavbar {
-            width: 71px;
-            height: 46px;
-            flex-shrink: 0;
-            margin: 12px 53px 15px 52px;
-        }
-    }
-
-    .divPagesNavbar {
-        display: flex;
-
-        a {
-            text-decoration: none;
-        }
-
-        p {
-            padding: 25px 25px 26px 26px;
-            justify-content: space-between;
-            font-size: 13px;
-            color: $dorado;
-            text-align: center;
-            font-family: Montserrat Alternates;
-            font-size: 13px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 141.9%;
-            cursor: pointer;
-        }
-
-        .pagesNavbar {
-            height: 19px;
-            flex-shrink: 0;
-
-            &:hover {
-                color: $pomelo;
-            }
-        }
+.navbarLogo {
+    background-color: $white;
+    border-top-right-radius: 18px;
+    width: 90%;
+  
+    .logoNavbar {
+        width: 60%;
+        flex-shrink: 0;
+        margin-left: 20%;
+        // padding: 20%;
     }
 }
+
+.pagesNavbar{
+    height: 19px;
+    flex-shrink: 0;
+    color: $dorado;
+    margin-left: 2%;
+   
+}
+
+.pagesNavbar:hover {
+    color: $pomelo; 
+}
+  
+a {
+    text-decoration: none;
+}
+
+.mobile-links {
+    display: flex;
+    .MuiIconButton-root {
+    color: inherit;
+    }
+}
+
+
+  .Box-md-flex {
+    display: flex;
+    align-items: center;
+
+  
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  
+  .IconButton-menu{
+    size: large;
+    color: inherit;
+    display: none;
+    margin-left: auto;
+    
+    @media (max-width: 768px){
+        display: flex;
+    }
+
+    .menuIcon{
+        color: $dorado;
+    }
+  }
+  
