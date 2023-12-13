@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+@font-face {
+  font-family: "Master Of Break";
+  src: url("/public/fonts/master_of_break.ttf");
+}
+@font-face {
+  font-family: "Libel";
+  src: url("/public/fonts/libel-suit-rg.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.propuesta-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10% 5%;
+  font-family: "Libel", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  width: auto;
+}
+.propuesta-title .content-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.propuesta-title .content-container .text-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.propuesta-title .content-container .text-container .title-container {
+  margin-bottom: 10px;
+}
+.propuesta-title .content-container .text-container .title-container .black-text {
+  color: #050505;
+  font-size: 200%;
+  font-family: "Libel", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 114.586%; /* 68.752px */
+}
+.propuesta-title .content-container .text-container .title-container .purple-text {
+  color: #9471e8;
+  font-size: 100%;
+  font-family: "Master Of Break";
+  font-size: 120%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 114.586%;
+}
+.propuesta-title .content-container .text-container .propuesta-text {
+  max-width: 100%;
+}
+.propuesta-title .content-container .text-container .propuesta-text p {
+  color: #050505;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 128%;
+  margin-bottom: 15px;
+}
+.propuesta-title .content-container .text-container .propuesta-text p span {
+  font-weight: bold;
+}
+.propuesta-title .content-container .image-container {
+  margin-left: 5%;
+  padding-top: 5%;
+}
+.propuesta-title .content-container .image-container img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .propuesta-title .content-container {
+    flex-direction: column;
+  }
+  .propuesta-title .content-container .propuesta-text {
+    max-width: 100%;
+  }
+  .propuesta-title .content-container .propuesta-text p {
+    flex: 0 0 100%;
+    margin: 1rem 0;
+    text-align: justify;
+  }
+  .propuesta-title .content-container .image-container {
+    margin: 5%;
+    order: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .propuesta-title .content-container .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  .propuesta-title .title-container {
+    text-align: center;
+    padding: 5%;
+  }
+  .propuesta-title .title-container h1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (min-width: 769px) {
+  .propuesta-title {
+    margin: 10%;
+  }
+  .propuesta-title .content-container {
+    flex-direction: row;
+  }
+  .propuesta-title .content-container .propuesta-text {
+    max-width: 100%;
+  }
+  .propuesta-title .content-container .propuesta-text p {
+    font-size: 25px;
+  }
+  .propuesta-title .content-container .purple-text {
+    font-size: 150%;
+  }
+  .propuesta-title .content-container .image-container {
+    max-width: 40%;
+  }
+}/*# sourceMappingURL=Propuesta.css.map */
