@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 @font-face {
   font-family: "Master Of Break";
-  src: url("/public/fonts/master_of_break.ttf");
+  src: url("/fonts/master_of_break.ttf");
 }
 @font-face {
   font-family: "Libel";
-  src: url("/public/fonts/libel-suit-rg.otf");
+  src: url("/fonts/libel-suit-rg.otf");
 }
 .heroContainer {
   display: grid;
@@ -81,45 +81,4 @@
 }
 .heroContainer .titlesContainer .contactBtn .sendBtn {
   padding: 10px 50px 10px 50px;
-}
-.heroContainer .imagesContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 90%;
-  position: relative;
-}
-.heroContainer .imagesContainer .petalosAtras {
-  position: absolute;
-  width: auto;
-  height: 59vh;
-  transform: translate(1.5rem, -3%);
-  z-index: 10;
-}
-.heroContainer .imagesContainer .petalosAdelante {
-  position: absolute;
-  width: auto;
-  height: 70vh;
-  transform: translate(-3%, -2%);
-  z-index: 104;
-}
-.heroContainer .imagesContainer .gajoNaranja {
-  position: absolute;
-  transform: rotate(260deg) translate(73%, 102%);
-  height: 15vh;
-  width: auto;
-  z-index: 100;
-}
-.heroContainer .imagesContainer .rodajaNaranja {
-  position: absolute;
-  transform: translate(-75%, 55%);
-  height: 20vh;
-  width: auto;
-  z-index: 9;
-}
-.heroContainer .imagesContainer .frascoPomelo {
-  position: absolute;
-  height: 45vh;
-  width: auto;
-  z-index: 10;
 }/*# sourceMappingURL=Home.css.map */

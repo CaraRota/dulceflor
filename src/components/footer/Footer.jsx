@@ -1,5 +1,5 @@
 import React from 'react'
-import SendBtn from '../buttons/SendBtn'
+import SendBtn from '../ui/buttons/SendBtn'
 
 //CSS
 import '../../css/Footer.css'

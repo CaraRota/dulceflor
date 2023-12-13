@@ -1,0 +1,48 @@
+@import '../../../global';
+
+.frascoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    position: relative;
+
+    .petalosAtras {
+        position: absolute;
+        width: auto;
+        height: 59vh;
+        transform: translate(1.5rem, -3%);
+        z-index: 10;
+    }
+
+    .petalosAdelante {
+        position: absolute;
+        width: auto;
+        height: 70vh;
+        transform: translate(-3%, -2%);
+        z-index: 104;
+    }
+
+    .gajoNaranja {
+        position: absolute;
+        transform: rotate(260deg) translate(73%, 102%);
+        height: 15vh;
+        width: auto;
+        z-index: 100;
+    }
+
+    .rodajaNaranja {
+        position: absolute;
+        transform: translate(-75%, 55%);
+        height: 20vh;
+        width: auto;
+        z-index: 9;
+    }
+
+    .frascoPomelo {
+        position: absolute;
+        height: 45vh;
+        width: auto;
+        z-index: 10;
+    }
+}
