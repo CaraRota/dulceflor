@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
 @font-face {
   font-family: "Master Of Break";
-  src: url("/public/fonts/master_of_break.ttf");
+  src: url("/fonts/master_of_break.ttf");
 }
 @font-face {
   font-family: "Libel";
-  src: url("/public/fonts/libel-suit-rg.otf");
+  src: url("/fonts/libel-suit-rg.otf");
 }
 * {
   margin: 0;

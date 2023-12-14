@@ -28,11 +28,11 @@ const Contact = () => {
 
         const templateParams = {
             to_name: 'Dulce Flor',
-            from_name: Nombre.trim(),
-            phone: Celular.trim(),
-            email: Email.trim(),
-            message: Mensaje.trim(),
-            reply_to: Email.trim()
+            from_name: Nombre,
+            phone: Celular,
+            email: Email,
+            message: Mensaje,
+            reply_to: Email
         };
 
         emailjs.send(configEmailJS.serviceID, configEmailJS.templateID, templateParams, configEmailJS.userID)

@@ -1,7 +1,7 @@
 import React from 'react'
 // import '../../css/propuesta.css'
 
-import './Propuesta.scss'
+import '../../css/Propuesta.css'
 
 //Images
 import propuesta from '../../assets/images/foto-propuesta.png'
