@@ -113,3 +113,28 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column;
+        padding: 20px 0;
+
+        .social {
+            .socialContainer {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .goTop {
+            .logo {
+                width: 100px;
+            }
+        }
+
+        .newsletter {
+            .text {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
