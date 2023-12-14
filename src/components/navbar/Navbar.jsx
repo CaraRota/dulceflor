@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Box, Toolbar, IconButton, Menu, MenuItem, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import '../../css/navbar.css'
+import '../../css/Navbar.css'
 //RRD
 import { Link, useLocation } from 'react-router-dom'
 
