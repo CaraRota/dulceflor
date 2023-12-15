@@ -2,20 +2,18 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #177d2d;
-  border: 1px solid #07270e;
-  border-radius: 50%;
-  padding: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.whatsappIconContainer:hover {
-  background-color: #179333;
-  background-color: #0f521e;
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
+  z-index: 1000;
 }
 .whatsappIconContainer .icon {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
+}
+.whatsappIconContainer .icon:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+.whatsappIconContainer .icon:active {
+  transform: scale(0.9);
+  transition: all 0.2s ease-in-out;
 }/*# sourceMappingURL=WhatsAppButton.css.map */

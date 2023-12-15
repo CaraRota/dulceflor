@@ -5,22 +5,21 @@ $wpp-color2: #179333;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: darken($wpp-color1, 10%);
-    border: 1px solid darken($wpp-color1, 30%);
-    border-radius: 50%;
-    padding: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    z-index: 1000;
 
-    &:hover {
-        background-color: $wpp-color2;
-        background-color: darken($wpp-color1, 20%);
-        transform: scale(1.05);
-        transition: transform 0.3s ease;
-    }
 
     .icon {
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.2s ease-in-out;
+        }
+        &:active {
+            transform: scale(0.9);
+            transition: all 0.2s ease-in-out;
+        }
     }
 }
