@@ -14,11 +14,15 @@ import emailjs from '@emailjs/browser';
 import '../../css/Contact.css'
 
 //RHF
-import { set, useForm } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
+
+//MUI
+import { Alert } from '@mui/material';
 
 const Contact = () => {
     const [isLoading, setIsLoading] = useState(false);
     const { register, handleSubmit, formState: { errors } } = useForm();
+    const [formSubmitted, setFormSubmitted] = useState("");
 
     const onSubmit = async (data, e) => {
         setIsLoading(true);
@@ -28,24 +32,25 @@ const Contact = () => {
 
         const templateParams = {
             to_name: 'Dulce Flor',
-            from_name: Nombre,
-            phone: Celular,
-            email: Email,
-            message: Mensaje,
-            reply_to: Email
+            from_name: Nombre.trim(),
+            phone: Celular.trim(),
+            email: Email.trim(),
+            message: Mensaje.trim(),
+            reply_to: Email.trim()
         };
 
-        emailjs.send(configEmailJS.serviceID, configEmailJS.templateID, templateParams, configEmailJS.userID)
-            .then((result) => {
-                console.log(result.text);
-                setIsLoading(false);
-            }, (error) => {
-                console.log(error.text);
-                setIsLoading(false);
-            });
-
-        e.target.reset();
-
+        try {
+            const result = await emailjs.send(configEmailJS.serviceID, configEmailJS.templateID, templateParams, configEmailJS.userID);
+            console.log(result.text);
+            setFormSubmitted("success")
+        } catch (error) {
+            console.error(error.text);
+            setFormSubmitted("error")
+            setIsLoading(false);
+        } finally {
+            setIsLoading(false);
+            e.target.reset();
+        }
     };
 
     return (
@@ -138,7 +143,23 @@ const Contact = () => {
                         !isLoading ? (
                             <SendBtn type="submit" text={'Enviar'} />
                         ) : (
-                            <SendBtn type="submit" text={'Enviando...'} />
+                            <SendBtn disabled={isLoading} text={'Enviando...'} />
+                        )
+                    }
+                    {
+                        formSubmitted === "success" && (
+                            <Alert severity="success" variant="outlined">
+                                <p>¡Gracias por tu mensaje!</p>
+                                <p>En breve nos pondremos en contacto.</p>
+                            </Alert>
+                        )
+                    }
+                    {
+                        formSubmitted === "error" && (
+                            <Alert severity="error" variant="outlined">
+                                <p>¡Hubo un error al enviar tu mensaje!</p>
+                                <p>Por favor, intentá nuevamente más tarde.</p>
+                            </Alert>
                         )
                     }
                 </form>
