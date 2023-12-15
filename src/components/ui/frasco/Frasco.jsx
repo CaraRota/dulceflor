@@ -8,7 +8,6 @@ import petalosAdelante from '../../../assets/images/flor-adelante.png'
 import gajoNaranja from '../../../assets/images/gajo-naranja.png'
 import rodajaNaranja from '../../../assets/images/rodaja-naranja.png'
 
-
 const Frasco = () => {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 

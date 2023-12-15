@@ -18,9 +18,6 @@
   margin-bottom: 2rem;
 }
 .sectionContainer .leftSideLeft {
-  align-items: end;
-}
-.sectionContainer .leftSide {
   align-items: start;
 }
 .sectionContainer .leftSide,
@@ -88,7 +85,6 @@
 .sectionContainer .leftSide .subtitle,
 .sectionContainer .leftSideLeft .subtitle {
   width: 100%;
-  max-width: 36.8125rem;
   height: auto;
   flex-shrink: 0;
 }
@@ -126,7 +122,6 @@
   border-radius: 0.6875rem;
   margin-top: 2rem;
   width: 100%;
-  max-width: 40.29425rem;
   height: auto;
   flex-shrink: 0;
 }
@@ -140,14 +135,18 @@
   line-height: 1.59375rem;
   padding: 1rem;
   width: 100%;
-  max-width: 38.04925rem;
   height: auto;
+}
+.sectionContainer .align-start {
+  align-items: start;
+}
+.sectionContainer .align-end {
+  align-items: end;
 }
 .sectionContainer .rightSide {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .sectionContainer .rightSide #Pomelo {
   border-radius: 3.25em 10.75em;
@@ -186,4 +185,36 @@
 .sectionContainer .rightSide .wrapper .frascoLeft {
   width: 100%;
   padding: 5em;
+}
+
+@media (max-width: 900px) {
+  .sectionContainer {
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+  }
+  .sectionContainer .align-start,
+  .sectionContainer .leftSideLeft,
+  .sectionContainer .align-end {
+    align-items: center !important;
+  }
+  .sectionContainer .rightSide .wrapper .frasco,
+  .sectionContainer .rightSide .wrapper .frascoLeft {
+    width: 100%;
+    padding: 3em;
+  }
+}
+@media (max-width: 540px) {
+  .sectionContainer .leftSide .title .normalFontTitle,
+  .sectionContainer .leftSideLeft .title .normalFontTitle {
+    display: inline-block;
+    line-height: 0;
+  }
 }/*# sourceMappingURL=Section.css.map */

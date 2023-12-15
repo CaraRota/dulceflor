@@ -8,9 +8,10 @@ import Propuesta from './components/pages/Propuesta.jsx'
 import Contact from './components/pages/Contact.jsx'
 import ErrorPage from './components/notfoundpage/ErrorPage.jsx'
 
-//Footer + Navbar
+//Footer + Navbar + WhatsAppButton
 import Navbar from './components/navbar/Navbar.jsx'
 import Footer from './components/footer/Footer.jsx'
+import WhatsAppButton from './components/ui/whatsapp/WhatsAppButton.jsx'
 
 
 
@@ -18,6 +19,7 @@ const App = () => {
   return (
     <Router>
       <Navbar />
+      <WhatsAppButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/propuesta" element={<Propuesta />} />

@@ -5,11 +5,14 @@ import '../../../css/Section.css'
 
 const Section = ({ title1, title2, text, text2, text3, image, leftSide, alt }) => {
 
+    //Activate responsiveness for screens smaller than 900px
+    window.innerWidth < 900 ? leftSide = true : null
+
     return (
 
         leftSide ? (
             <div className='sectionContainer'>
-                <div className='leftSide'>
+                <div className='leftSide align-start'>
                     <div className='title'>
                         {title2.length < 20 ?
                             (
@@ -37,7 +40,7 @@ const Section = ({ title1, title2, text, text2, text3, image, leftSide, alt }) =
                         </div>
                     </div>
                 </div>
-                <div className='rightSide'>
+                <div className='rightSide align-end'>
                     <div id={title1} className='wrapper'>
                         <img className='frascoLeft' src={image} alt={alt} />
                     </div>
@@ -46,12 +49,12 @@ const Section = ({ title1, title2, text, text2, text3, image, leftSide, alt }) =
         )
             : (
                 <div className='sectionContainer'>
-                    <div className='rightSide'>
+                    <div className='rightSide align-start'>
                         <div id={title1} className='wrapper'>
                             <img className='frasco' src={image} alt={alt} />
                         </div>
                     </div>
-                    <div className='leftSideLeft'>
+                    <div className='leftSideLeft align-end'>
                         <div className='title'>
                             {title2.length < 20 ?
                                 (

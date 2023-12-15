@@ -108,3 +108,57 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+    .contactContainer {
+        grid-template-columns: 1fr;
+
+        .leftSide {
+            grid-column: 1 / 2;
+            margin-bottom: 2rem;
+
+            .title {
+                font-size: 3.125rem;
+                /* 3.125rem */
+            }
+
+            .subtitle {
+                font-size: 1.25rem;
+                /* 1.25rem */
+            }
+
+            form {
+                max-width: 100%;
+
+                .labelContainer {
+                    label {
+                        font-size: 1.125rem;
+                        /* 1.125rem */
+                    }
+                }
+
+                input,
+                textarea {
+                    height: 2.34181rem;
+                }
+
+                textarea {
+                    height: 6.25rem;
+                }
+
+                input[placeholder],
+                textarea[placeholder] {
+                    font-size: 1rem;
+                    /* 1rem */
+                }
+                .spinnerContainer {
+                    margin-top: 1.2rem;
+                }
+            }
+        }
+
+        .rightSide {
+            display: none;
+        }
+    }
+}

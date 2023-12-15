@@ -101,4 +101,47 @@
 }
 .contactContainer .rightSide .frascoContainer {
   height: 100vh !important;
+}
+
+@media (max-width: 1000px) {
+  .contactContainer {
+    grid-template-columns: 1fr;
+  }
+  .contactContainer .leftSide {
+    grid-column: 1/2;
+    margin-bottom: 2rem;
+  }
+  .contactContainer .leftSide .title {
+    font-size: 3.125rem;
+    /* 3.125rem */
+  }
+  .contactContainer .leftSide .subtitle {
+    font-size: 1.25rem;
+    /* 1.25rem */
+  }
+  .contactContainer .leftSide form {
+    max-width: 100%;
+  }
+  .contactContainer .leftSide form .labelContainer label {
+    font-size: 1.125rem;
+    /* 1.125rem */
+  }
+  .contactContainer .leftSide form input,
+  .contactContainer .leftSide form textarea {
+    height: 2.34181rem;
+  }
+  .contactContainer .leftSide form textarea {
+    height: 6.25rem;
+  }
+  .contactContainer .leftSide form input[placeholder],
+  .contactContainer .leftSide form textarea[placeholder] {
+    font-size: 1rem;
+    /* 1rem */
+  }
+  .contactContainer .leftSide form .spinnerContainer {
+    margin-top: 1.2rem;
+  }
+  .contactContainer .rightSide {
+    display: none;
+  }
 }/*# sourceMappingURL=Contact.css.map */

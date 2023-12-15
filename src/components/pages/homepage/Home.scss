@@ -4,9 +4,9 @@
     display: grid;
     grid-template-rows: 1fr 3fr;
     place-items: center;
-    height: 100vh;
+    max-height: calc(100vh - 6rem);
     background-color: $white;
-    margin-top: 4.38rem;
+    margin-top: 5rem;
 
     .titlesContainer {
         display: flex;
