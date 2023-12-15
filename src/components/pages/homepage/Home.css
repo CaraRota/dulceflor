@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+@font-face {
+  font-family: "Master Of Break";
+  src: url("/fonts/master_of_break.ttf");
+}
+@font-face {
+  font-family: "Libel";
+  src: url("/fonts/libel-suit-rg.otf");
+}
+.heroContainer {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  place-items: center;
+  height: 100vh;
+  background-color: #fff;
+  margin-top: 4.38rem;
+}
+.heroContainer .titlesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 90%;
+  gap: 1rem;
+}
+.heroContainer .titlesContainer .title {
+  color: #050505;
+  background-color: #FFEDCA;
+  font-family: "Libel", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 11px;
+  padding: 0.5rem;
+}
+@media (max-width: 978px) {
+  .heroContainer .titlesContainer .title {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 738px) {
+  .heroContainer .titlesContainer .title {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .heroContainer .titlesContainer .title {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 410px) {
+  .heroContainer .titlesContainer .title {
+    font-size: 0.62rem;
+  }
+}
+.heroContainer .titlesContainer .subtitle {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.heroContainer .titlesContainer .subtitle .bold {
+  font-weight: 700;
+}
+@media (max-width: 978px) {
+  .heroContainer .titlesContainer .subtitle {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 738px) {
+  .heroContainer .titlesContainer .subtitle {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .heroContainer .titlesContainer .subtitle {
+    font-size: 0.62rem;
+  }
+}
+.heroContainer .titlesContainer .contactBtn .sendBtn {
+  padding: 10px 50px 10px 50px;
+}/*# sourceMappingURL=Home.css.map */

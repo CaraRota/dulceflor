@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+@font-face {
+  font-family: "Master Of Break";
+  src: url("/fonts/master_of_break.ttf");
+}
+@font-face {
+  font-family: "Libel";
+  src: url("/fonts/libel-suit-rg.otf");
+}
+.frascoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  position: relative;
+}
+.frascoContainer .petalosAtras {
+  position: absolute;
+  width: auto;
+  height: 59vh;
+  transform: translate(1.5rem, -3%);
+  z-index: 10;
+}
+.frascoContainer .petalosAdelante {
+  position: absolute;
+  width: auto;
+  height: 70vh;
+  transform: translate(-3%, -2%);
+  z-index: 104;
+}
+.frascoContainer .gajoNaranja {
+  position: absolute;
+  transform: rotate(260deg) translate(73%, 102%);
+  height: 15vh;
+  width: auto;
+  z-index: 100;
+}
+.frascoContainer .rodajaNaranja {
+  position: absolute;
+  transform: translate(-75%, 55%);
+  height: 20vh;
+  width: auto;
+  z-index: 9;
+}
+.frascoContainer .frascoPomelo {
+  position: absolute;
+  height: 45vh;
+  width: auto;
+  z-index: 10;
+}/*# sourceMappingURL=Frasco.css.map */

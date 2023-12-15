@@ -21,10 +21,10 @@ const Navbar = () => {
     setAnchorEl(null);
   };
 
+  const isMobile = window.innerWidth <= 768;
+
 
   return (
-
-
     <AppBar className="AppBar" position="static" sx={{ backgroundColor: 'black' }}>
       <Toolbar sx={{ padding: 0 }}>
         <Typography variant="h6">
@@ -35,7 +35,6 @@ const Navbar = () => {
           </div>
         </Typography>
 
-
         {(location.pathname == '/' || window.innerWidth >= 768) && (
           <Link to='/' className='pagesNavbar'>
             <Typography variant="h6">
@@ -44,9 +43,29 @@ const Navbar = () => {
           </Link>
         )}
 
+        {isMobile && (
+          <React.Fragment>
+            {(location.pathname === '/propuesta') && (
+              <Link to='/propuesta' className='pagesNavbar'>
+                <Typography variant="h6">
+                  Propuesta
+                </Typography>
+              </Link>
+            )}
+
+            {(location.pathname === '/contact') && (
+              <Link to='/contact' className='pagesNavbar'>
+                <Typography variant="h6">
+                  Contacto
+                </Typography>
+              </Link>
+            )}
+          </React.Fragment>
+        )}
+
         <Box className="Box-md-flex">
           <Link to='/' className='pagesNavbar' onClick={handleMenuClose}>
-            <Typography variant="h6" sx={{ ml: 2 }}>
+            <Typography variant="h6" sx={{ ml: 2}}>
               Productos
             </Typography>
           </Link>
@@ -72,7 +91,7 @@ const Navbar = () => {
             onClick={handleMenuOpen}
             color="inherit"
           >
-            <MenuIcon sx={{ color: '#FFCC6A' }} />
+            <MenuIcon sx={{ color: '#FFCC6A' }}/>
           </IconButton>
           <Menu
             id="menu-appbar"
@@ -90,7 +109,11 @@ const Navbar = () => {
             onClose={handleMenuClose}
             sx={{ backgroundColor: 'black' }}
           >
-
+            <MenuItem onClick={handleMenuClose} >
+              <Link to='/' className='pagesNavbar'>
+                Inicio
+              </Link>
+            </MenuItem>
             <MenuItem onClick={handleMenuClose}>
               <Link to='/' className='pagesNavbar'>
                 Productos
