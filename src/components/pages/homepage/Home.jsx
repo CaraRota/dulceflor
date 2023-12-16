@@ -29,7 +29,7 @@ const Home = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const offset = 100;
+            const offset = 50;
 
             const element1 = document.querySelector('.section1');
             if (element1 && window.scrollY + window.innerHeight >= element1.offsetTop + offset) {
@@ -174,7 +174,6 @@ const Home = () => {
                             alt='frasco de frambuesa'
                         />
                     </div>
-                    <div className='section6'></div>
                 </>
             }
         </>

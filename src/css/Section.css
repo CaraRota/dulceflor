@@ -215,6 +215,6 @@
   .sectionContainer .leftSide .title .normalFontTitle,
   .sectionContainer .leftSideLeft .title .normalFontTitle {
     display: inline-block;
-    line-height: 0;
+    line-height: 1;
   }
 }/*# sourceMappingURL=Section.css.map */
