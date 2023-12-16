@@ -17,13 +17,13 @@ const Section = ({ title1, title2, text, text2, text3, image, leftSide, alt }) =
                         {title2.length < 20 ?
                             (
                                 <>
-                                    <span id={title1} className='specialFontTitle'>{title1}</span>
+                                    <span id={title1} className='specialFontTitle'>{title1} </span>
                                     <span className='normalFontTitle'> {title2}</span>
                                 </>
                             )
                             : (
                                 <>
-                                    <div id={title1} className='longSpecialFontTitle'>{title1}</div>
+                                    <div id={title1} className='longSpecialFontTitle'>{title1} </div>
                                     <div className='longFontTitle'> {title2}</div>
                                 </>
                             )
@@ -59,13 +59,13 @@ const Section = ({ title1, title2, text, text2, text3, image, leftSide, alt }) =
                             {title2.length < 20 ?
                                 (
                                     <>
-                                        <span id={title1} className='specialFontTitle'>{title1}</span>
+                                        <span id={title1} className='specialFontTitle'>{title1} </span>
                                         <span className='normalFontTitle'> {title2}</span>
                                     </>
                                 )
                                 : (
                                     <>
-                                        <div id={title1} className='longSpecialFontTitle'>{title1}</div>
+                                        <div id={title1} className='longSpecialFontTitle'>{title1} </div>
                                         <div className='longFontTitle'> {title2}</div>
                                     </>
                                 )
