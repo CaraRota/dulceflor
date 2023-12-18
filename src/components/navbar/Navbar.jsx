@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Box, Toolbar, IconButton, Menu, MenuItem, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
+
 import '../../css/Navbar.css'
 //RRD
 import { Link, useLocation } from 'react-router-dom'
@@ -25,7 +26,7 @@ const Navbar = () => {
 
 
   return (
-    <AppBar className="AppBar" position="static" sx={{ backgroundColor: 'black' }}>
+    <AppBar className="AppBar" position="static" sx={{ backgroundColor: 'black'}}>
       <Toolbar sx={{ padding: 0 }}>
         <Typography variant="h6">
           <div className='navbarLogo'>
@@ -102,33 +103,42 @@ const Navbar = () => {
             }}
             keepMounted
             transformOrigin={{
-              vertical: 'top',
+              vertical: 'bottom',
               horizontal: 'right',
             }}
             open={Boolean(anchorEl)}
             onClose={handleMenuClose}
             sx={{ backgroundColor: 'black' }}
-          >
-            <MenuItem onClick={handleMenuClose} >
-              <Link to='/' className='pagesNavbar'>
-                Inicio
-              </Link>
-            </MenuItem>
-            <MenuItem onClick={handleMenuClose}>
-              <Link to='/' className='pagesNavbar'>
-                Productos
-              </Link>
-            </MenuItem>
-            <MenuItem onClick={handleMenuClose}>
-              <Link to='/propuesta' className='pagesNavbar'>
-                Propuesta
-              </Link>
-            </MenuItem>
-            <MenuItem onClick={handleMenuClose}>
-              <Link to='/contact' className='pagesNavbar'>
-                Contactos
-              </Link>
-            </MenuItem>
+            >
+            <Box sx={{ backgroundColor: 'black', 
+              width: '100vw', 
+              height: '50vw',
+              top: '100%', 
+              alignItems: 'flex-start',
+              textAlign: 'right',
+              zIndex: 1000}}>
+                <MenuItem onClick={handleMenuClose}>
+                    <Link to='/' className='pagesNavbar'>
+                      Inicio
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleMenuClose}>
+                    <Link to='/' className='pagesNavbar'>
+                      Productos
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleMenuClose}>
+                    <Link to='/propuesta' className='pagesNavbar'>
+                      Propuesta
+                    </Link>
+                  </MenuItem>
+                  <MenuItem onClick={handleMenuClose}>
+                    <Link to='/contact' className='pagesNavbar'>
+                      Contactos
+                    </Link>
+                  </MenuItem>
+            </Box>
+            
           </Menu>
         </Box>
       </Toolbar>
