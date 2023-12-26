@@ -8,22 +8,28 @@
   font-family: "Libel";
   src: url("/fonts/libel-suit-rg.otf");
 }
+.navBox {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
 .navbarLogo {
   background-color: #fff;
   border-top-right-radius: 18px;
-  width: 90%;
+  width: 100%;
+  padding: 1%;
 }
 .navbarLogo .logoNavbar {
-  width: 60%;
+  width: 90%;
   flex-shrink: 0;
-  margin-left: 20%;
 }
 
 .pagesNavbar {
   height: 19px;
   flex-shrink: 0;
   color: #FFCC6A;
-  margin-left: 2%;
+  margin-left: 5%;
 }
 
 .pagesNavbar:hover {

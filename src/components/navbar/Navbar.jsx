@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { AppBar, Box, Toolbar, IconButton, Menu, MenuItem, Typography } from '@mui/material';
+import { AppBar, Box, IconButton, Menu, MenuItem, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import Divider from '@mui/material/Divider';
 
 
 import '../../css/Navbar.css'
@@ -27,7 +28,8 @@ const Navbar = () => {
 
   return (
     <AppBar className="AppBar" position="static" sx={{ backgroundColor: 'black'}}>
-      <Toolbar sx={{ padding: 0 }}>
+
+      <Box className='navBox'>
         <Typography variant="h6">
           <div className='navbarLogo'>
             <Link to='/'>
@@ -103,45 +105,64 @@ const Navbar = () => {
             }}
             keepMounted
             transformOrigin={{
-              vertical: 'bottom',
+              vertical: 'top',
               horizontal: 'right',
             }}
             open={Boolean(anchorEl)}
             onClose={handleMenuClose}
-            sx={{ backgroundColor: 'black' }}
+            
+            
+            sx={{marginTop: 15,
+              '& .MuiPaper-root': {
+                backgroundColor: 'black',
+                boxShadow: 'none',
+                padding: 0,
+                marginTop: 0,
+                width: '100vw',
+                borderBottomLeftRadius: '18px',
+                borderBottomRightRadius: '18px' 
+              },}}
             >
             <Box sx={{ backgroundColor: 'black', 
+              display: "flex",
+              justifyContent: "flex-end",
               width: '100vw', 
-              height: '50vw',
+              height: '70vw',
               top: '100%', 
-              alignItems: 'flex-start',
-              textAlign: 'right',
-              zIndex: 1000}}>
-                <MenuItem onClick={handleMenuClose}>
+              zIndex: 1000,
+        
+              }}>
+              <Box sx={{display: 'flex', flexDirection: 'column', marginRight: 3}}>
+                  <MenuItem onClick={handleMenuClose} sx={{justifyContent: 'right'}}>
                     <Link to='/' className='pagesNavbar'>
                       Inicio
                     </Link>
                   </MenuItem>
-                  <MenuItem onClick={handleMenuClose}>
+                  <Divider sx={{ borderColor: '#E4E4E4', borderWidth: 1, margin: 1, width: 80}}/>
+                  <MenuItem onClick={handleMenuClose} sx={{justifyContent: 'right'}}>
                     <Link to='/' className='pagesNavbar'>
                       Productos
                     </Link>
                   </MenuItem>
+                  <Divider sx={{ borderColor: '#E4E4E4', borderWidth: 1, margin: 1, width: 80}}/>
                   <MenuItem onClick={handleMenuClose}>
                     <Link to='/propuesta' className='pagesNavbar'>
                       Propuesta
                     </Link>
                   </MenuItem>
+                  <Divider sx={{ borderColor: '#E4E4E4', borderWidth: 1, margin: 1, width: 80}}/>
                   <MenuItem onClick={handleMenuClose}>
                     <Link to='/contact' className='pagesNavbar'>
                       Contactos
                     </Link>
                   </MenuItem>
+                </Box>
             </Box>
             
           </Menu>
         </Box>
-      </Toolbar>
+
+      </Box>
     </AppBar>
   )
 }

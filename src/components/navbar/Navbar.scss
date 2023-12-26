@@ -1,16 +1,21 @@
 @import '../../global.scss';
 
+.navBox{
+    flex-direction: row;
+    display: flex;
+
+    align-items: center;
+}
 
 .navbarLogo {
     background-color: $white;
     border-top-right-radius: 18px;
-    width: 90%;
+    width: 100%;
+    padding: 1%;
   
     .logoNavbar {
-        width: 60%;
+        width: 90%;
         flex-shrink: 0;
-        margin-left: 20%;
-        // padding: 20%;
     }
 }
 
@@ -18,7 +23,8 @@
     height: 19px;
     flex-shrink: 0;
     color: $dorado;
-    margin-left: 2%;
+    margin-left: 5%;
+
 }
 
 .pagesNavbar:hover {
@@ -62,4 +68,6 @@ a {
     }
   }
  
- 
+//  #menu-appbar{
+//     width: 100vh; 
+//  }
