@@ -3,7 +3,7 @@
 .sendBtn {
     padding: 10px 20px 10px 20px;
     border-radius: 9px;
-    background-color: $dorado;
+    background-color: $hero-title-bg;
     color: $black;
     font-family: $font-general;
     font-weight: 700;
@@ -11,6 +11,6 @@
     cursor: pointer;
 
     &:hover {
-        box-shadow: 0px 0px 10px 0px $dorado;
+        box-shadow: 0px 0px 10px 0px $hero-title-bg;
     }
 }
