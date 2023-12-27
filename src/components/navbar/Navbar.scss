@@ -1,65 +1,84 @@
 @import '../../global.scss';
 
+.navBox {
+    flex-direction: row;
+    display: flex;
+
+    align-items: center;
+}
+
+.navbarLogoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 10px;
+}
 
 .navbarLogo {
-    background-color: $white;
-    border-top-right-radius: 18px;
-    width: 90%;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    width: 100%;
+
     .logoNavbar {
-        width: 60%;
-        flex-shrink: 0;
-        margin-left: 20%;
-        // padding: 20%;
+        width: auto;
+        max-height: 75px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
 }
 
-.pagesNavbar{
+.pagesNavbar {
     height: 19px;
     flex-shrink: 0;
     color: $dorado;
-    margin-left: 2%;
-   
+    margin-left: 5%;
+
 }
 
 .pagesNavbar:hover {
-    color: $pomelo; 
+    color: $pomelo;
 }
-  
+
 a {
     text-decoration: none;
 }
 
 .mobile-links {
     display: flex;
+
     .MuiIconButton-root {
-    color: inherit;
+        color: inherit;
     }
 }
 
-
-  .Box-md-flex {
+.Box-md-flex {
     display: flex;
     align-items: center;
 
-  
+
     @media (max-width: 768px) {
-      display: none;
+        display: none;
     }
-  }
-  
-  .IconButton-menu{
+}
+
+.IconButton-menu {
     size: large;
     color: inherit;
     display: none;
     margin-left: auto;
-    
-    @media (max-width: 768px){
+
+    @media (max-width: 768px) {
         display: flex;
     }
 
-    .menuIcon{
+    .menuIcon {
         color: $dorado;
     }
-  }
-  
+}
+
+//  #menu-appbar{
+//     width: 100vh; 
+//  }

@@ -87,7 +87,6 @@
   .propuesta-title .content-container .propuesta-text p {
     flex: 0 0 100%;
     margin: 1rem 0;
-    text-align: justify;
   }
   .propuesta-title .content-container .image-container {
     margin: 5%;
