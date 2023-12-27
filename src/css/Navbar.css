@@ -14,15 +14,26 @@
   align-items: center;
 }
 
+.navbarLogoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  padding-right: 10px;
+}
+
 .navbarLogo {
-  background-color: #fff;
-  border-top-right-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #050505;
   width: 100%;
-  padding: 1%;
 }
 .navbarLogo .logoNavbar {
-  width: 90%;
-  flex-shrink: 0;
+  width: auto;
+  max-height: 75px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .pagesNavbar {

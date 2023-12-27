@@ -27,7 +27,7 @@ const Navbar = () => {
 
 
   return (
-    <AppBar className="AppBar" position="static" sx={{ backgroundColor: 'black'}}>
+    <AppBar className="AppBar" position="static" sx={{ backgroundColor: 'black' }}>
 
       <Box className='navBox'>
         <Typography variant="h6">
@@ -37,14 +37,6 @@ const Navbar = () => {
             </Link>
           </div>
         </Typography>
-
-        {(location.pathname == '/' || window.innerWidth >= 768) && (
-          <Link to='/' className='pagesNavbar'>
-            <Typography variant="h6">
-              Inicio
-            </Typography>
-          </Link>
-        )}
 
         {isMobile && (
           <React.Fragment>
@@ -68,7 +60,7 @@ const Navbar = () => {
 
         <Box className="Box-md-flex">
           <Link to='/' className='pagesNavbar' onClick={handleMenuClose}>
-            <Typography variant="h6" sx={{ ml: 2}}>
+            <Typography variant="h6" sx={{ ml: 2 }}>
               Productos
             </Typography>
           </Link>
@@ -87,83 +79,71 @@ const Navbar = () => {
         <Box className="IconButton-menu" >
           <IconButton
             className="IconButton-menu"
-            size="large"
             aria-label="menu"
             aria-controls="menu-appbar"
             aria-haspopup="true"
             onClick={handleMenuOpen}
             color="inherit"
           >
-            <MenuIcon sx={{ color: '#FFCC6A' }}/>
+            <MenuIcon sx={{ color: '#FFCC6A' }} />
           </IconButton>
           <Menu
             id="menu-appbar"
             anchorEl={anchorEl}
             anchorOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
+              vertical: 'bottom',
+              horizontal: 'center',
             }}
             keepMounted
             transformOrigin={{
               vertical: 'top',
-              horizontal: 'right',
+              horizontal: 'center',
             }}
             open={Boolean(anchorEl)}
             onClose={handleMenuClose}
-            
-            
-            sx={{marginTop: 15,
+
+            sx={{
               '& .MuiPaper-root': {
                 backgroundColor: 'black',
-                boxShadow: 'none',
-                padding: 0,
-                marginTop: 0,
-                width: '100vw',
                 borderBottomLeftRadius: '18px',
-                borderBottomRightRadius: '18px' 
-              },}}
-            >
-            <Box sx={{ backgroundColor: 'black', 
-              display: "flex",
-              justifyContent: "flex-end",
-              width: '100vw', 
-              height: '70vw',
-              top: '100%', 
-              zIndex: 1000,
-        
-              }}>
-              <Box sx={{display: 'flex', flexDirection: 'column', marginRight: 3}}>
-                  <MenuItem onClick={handleMenuClose} sx={{justifyContent: 'right'}}>
-                    <Link to='/' className='pagesNavbar'>
-                      Inicio
-                    </Link>
-                  </MenuItem>
-                  <Divider sx={{ borderColor: '#E4E4E4', borderWidth: 1, margin: 1, width: 80}}/>
-                  <MenuItem onClick={handleMenuClose} sx={{justifyContent: 'right'}}>
-                    <Link to='/' className='pagesNavbar'>
-                      Productos
-                    </Link>
-                  </MenuItem>
-                  <Divider sx={{ borderColor: '#E4E4E4', borderWidth: 1, margin: 1, width: 80}}/>
-                  <MenuItem onClick={handleMenuClose}>
-                    <Link to='/propuesta' className='pagesNavbar'>
-                      Propuesta
-                    </Link>
-                  </MenuItem>
-                  <Divider sx={{ borderColor: '#E4E4E4', borderWidth: 1, margin: 1, width: 80}}/>
-                  <MenuItem onClick={handleMenuClose}>
-                    <Link to='/contact' className='pagesNavbar'>
-                      Contactos
-                    </Link>
-                  </MenuItem>
-                </Box>
-            </Box>
-            
+                borderBottomRightRadius: '18px',
+                width: '99vw',
+                maxWidth: '99vw',
+                marginRight: '0px',
+                margin: '0px',
+                padding: '0px',
+              }
+            }}
+          >
+            <div className='navbarLogoContainer'>
+              <MenuItem onClick={handleMenuClose} sx={{ justifyContent: 'right' }}>
+                <Link to='/' className='pagesNavbar'>
+                  Inicio
+                </Link>
+              </MenuItem>
+              <Divider sx={{ borderColor: '#E4E4E4', borderWidth: 1, margin: 1, width: 80 }} />
+              <MenuItem onClick={handleMenuClose} sx={{ justifyContent: 'right' }}>
+                <Link to='/' className='pagesNavbar'>
+                  Productos
+                </Link>
+              </MenuItem>
+              <Divider sx={{ borderColor: '#E4E4E4', borderWidth: 1, margin: 1, width: 80 }} />
+              <MenuItem onClick={handleMenuClose}>
+                <Link to='/propuesta' className='pagesNavbar'>
+                  Propuesta
+                </Link>
+              </MenuItem>
+              <Divider sx={{ borderColor: '#E4E4E4', borderWidth: 1, margin: 1, width: 80 }} />
+              <MenuItem onClick={handleMenuClose}>
+                <Link to='/contact' className='pagesNavbar'>
+                  Contactos
+                </Link>
+              </MenuItem>
+            </div>
           </Menu>
         </Box>
-
       </Box>
-    </AppBar>
+    </AppBar >
   )
 }
 
