@@ -83,7 +83,7 @@ const Home = () => {
                 </div>
                 <Frasco />
             </div>
-            <div className='section1'></div>
+            <div className='section1' id='section1'></div>
             {
                 isAnimated &&
                 <>
