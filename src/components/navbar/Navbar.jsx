@@ -14,7 +14,6 @@ import logo from '../../assets/images/logo-transparent.png'
 const Navbar = () => {
   const location = useLocation();
   const [anchorEl, setAnchorEl] = useState(null);
-
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -22,6 +21,20 @@ const Navbar = () => {
   const handleMenuClose = () => {
     setAnchorEl(null);
   };
+
+  const handleProductsClick = () => {
+
+    // Close menu if open
+    handleMenuClose();
+
+    // Scroll to products section after a short delay
+    setTimeout(() => {
+      const section = document.getElementById('section1');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth'});
+      }
+    }, 100);
+  }
 
   const isMobile = window.innerWidth <= 768;
 
@@ -59,7 +72,7 @@ const Navbar = () => {
         )}
 
         <Box className="Box-md-flex">
-          <Link to='/' className='pagesNavbar' onClick={handleMenuClose}>
+          <Link to='/' className='pagesNavbar' onClick={handleProductsClick}>
             <Typography variant="h6" sx={{ ml: 2 }}>
               Productos
             </Typography>
@@ -122,7 +135,7 @@ const Navbar = () => {
                 </Link>
               </MenuItem>
               <Divider sx={{ borderColor: '#E4E4E4', borderWidth: 1, margin: 1, width: 80 }} />
-              <MenuItem onClick={handleMenuClose} sx={{ justifyContent: 'right' }}>
+              <MenuItem onClick={handleProductsClick} sx={{ justifyContent: 'right' }}>
                 <Link to='/' className='pagesNavbar'>
                   Productos
                 </Link>
